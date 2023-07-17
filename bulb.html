@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <style>
+            .bg{
+                background-color: black;
+                height:400px;
+            }
+            #bulb{
+                position:relative;
+                left:750px;
+                top:-90px;
+                background-color:white;
+            }
+            #light{
+                height:200px;
+                width:200px;
+                position:relative;
+                left:710px;
+                top:270px;
+                border:1px solid white;
+                text-align: start;
+                /* background-color: black; */  
+            }
+            #dark{
+                height:200px;
+                 width:200px;  
+                position:relative;
+                left:860px;
+                top:260px;
+                border:1px solid white;
+                background-color:black;
+                color:white;
+                text-align:right;
+                
+            }
+            
+                  
+        </style>
+    </head>
+    <body>
+         <div class="bg">
+            <button id="light" onclick="TurnOn()">on</button><br>
+            <button id="dark"onclick="TurnOff()">off</button><br>
+            <img id="bulb"src="\HTML and CSS\switch\light.jpeg"alt="\HTML and CSS\switch\dark.jpeg"><br>
+         </div>
+         <script>
+            function TurnOn()
+            {
+                document.getElementById("bulb").src="/HTML and CSS/switch/light.jpeg";
+            }
+            function TurnOff()
+            {
+                document.getElementById("bulb").src="/HTML and CSS/switch/dark.jpeg";
+            }
+         </script>
+    </body>
+</html>
